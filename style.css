@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet"');
+
+/*************************************************/
+/******************** general ********************/
+/*************************************************/
+
+body {
+  height: 100%;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato';
+
+  background-color: #B6D2F3;
+  overflow-y: scroll;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.background {
+  background-image: url('./Images/Background_Rainy.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/************************************************/
+/******************** header ********************/
+/************************************************/
+
+/***** settings *****/
+
+.settings-button {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+
+/***** location *****/
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  filter: drop-shadow(0px 10px 10px #04093791);
+}
+
+h1.location-text {
+  margin: 4%;
+  font-size: 45px;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+/***************************************************/
+/******************** main info ********************/
+/***************************************************/
+
+.main-info {
+  margin-top: 3%;
+  margin-left: 12%;
+}
+
+/***** what to bring *****/
+
+.to-bring-icons {
+  margin-bottom: 9%;
+  display: flex;
+  gap: 8%;
+  filter: drop-shadow(-5px 5px 10px #0409375d);
+}
+
+/***** temp info *****/
+
+.temp-info {
+  display: flex;
+  gap: 6%;
+}
+
+.temp-info__large-text {
+  margin: 0px;
+  line-height: 140px;
+  font-weight: 400;
+  font-size: 220px;
+  color: #ffffff;
+  filter: drop-shadow(-10px 10px 10px #0409376e);
+}
+
+p.temp-info__small-text {
+  margin: 0px;
+  margin-bottom: 10px;
+  position: relative;
+  top: -10px;
+
+  font-weight: 400;
+  font-size: 45px;
+  color: #ffffff;
+  filter: drop-shadow(-10px 10px 15px #040937e9);
+}
+
+.temp-info__large-degree {
+  margin: 0px;
+  position: relative;
+  top: -70px;
+  font-weight: 400;
+  font-size: 120px;
+}
+.temp-info__small-degree {
+  margin: 0px;
+  position: relative;
+  top: -5px;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+/*****************************************************/
+/******************** hourly temp ********************/
+/*****************************************************/
+
+::-webkit-scrollbar {
+  height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(79, 95, 149);
+  border-radius: 20px;
+}
+
+.temp-scoll-container {
+  overflow-x: scroll;
+  overflow-y: visible;
+  position: relative;
+}
+
+/*************************************************/
+/******************** widgets ********************/
+/*************************************************/
+.widget_bg {
+  background-image: url('./Images/BottomPanel.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+  top: -74px;
+}
+.widgets {
+  margin: 100px;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.widget__edit-button__container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.widget__edit-button {
+  margin-top: 30px;
+  height: 50px;
+  width: 150px;
+  margin-bottom: 30px;
+
+  background: #FCFEFF;
+  filter: drop-shadow(-5px 5px 10px rgba(7, 43, 84, 0.5));
+  border-radius: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-text {
+  margin: 0px;
+  font-size: 35px;
+  font-weight: 400;
+  color: #90939e;
+}
+
+.widget__header-text {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+
+  font-size: 35px;
+  font-weight: 400;
+  color: #0C3361;
+}
+
+.widget__header-text2 {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 5px;
+
+  font-size: 35px;
+  font-weight: 400;
+  color: #0C3361;
+}
+
+.widget__header-text3 {
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+
+  font-size: 35px;
+  font-weight: 400;
+  color: #0C3361;
+}
+
+.widget__body-text {
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+
+  font-size: 100px;
+  font-weight: 400;
+  color: #0C3361;
+}
+
+.widget__body-text2 {
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+
+  font-size: 70px;
+  font-weight: 400;
+  color: #0C3361;
+}
+
+.widget__small-text {
+  margin-top: 20px;
+
+  font-size: 35px;
+  font-weight: 400;
+  color: #0C3361;
+}
+
+.widget__small-text2 {
+  margin-top: 0px;
+  margin-left: 30px;
+
+  font-size: 30px;
+  font-weight: 400;
+  color: #0C3361;
+}
+
+.widget-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.widget {
+  margin: 0px;
+  margin-bottom: 30px;
+  height: 230px;
+  border-radius: 50px;
+
+  background: #FCFEFF;
+  filter: drop-shadow(-5px 5px 12px rgba(7, 43, 84, 0.4));
+}
+
+.widget-size1 {
+  width: 230px;
+}
+.widget-size2 {
+  width: 510px;
+}
+.widget-size3 {
+  width: 780px;
+}
+
+.rainfall-widget {
+  margin-top: 65px;
+  background-image: url('./Images/RainWidget.png');
+  height: 270px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.weekly-forecast {
+  background-image: url('./Images/WeeklyForecast.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.widget-flex-container-alert {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.widget-flex-container-sunset {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}

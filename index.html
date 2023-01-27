@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+    <div class="background">
+        <header>
+          <img class="settings-button" src="./Images/Settings.png" width="6%" alt="settings button">
+
+          <div class="location">
+            <img src="./Images/LeftArrow.png" width="6%" alt="left location button">
+            <h1 class="location-text">Philadelphia | PA</h1>
+            <img src="./Images/RightArrow.png" width="6%" alt="right location button">
+          </div>
+        </header>
+
+        <main>
+          <section class="main-info">
+
+            <section class="to-bring-icons">
+              <img src="./Images/Icon_Rainboots.png" width="14%" alt="rainboots icon">
+              <img src="./Images/Icon_Umbrella.png" width="14%" alt="umbrella icon">
+              <img src="./Images/Icon_Raincoat.png" width="14%" alt="raincoat icon">
+            </section>
+            <section class="temp-info">
+              <h2 class="temp-info__large-text">55<span class="temp-info__large-degree">°</span></h2>
+              <div>
+                <p class="temp-info__small-text">H: 60<span class="temp-info__small-degree">°</span>&ensp;L: 53<span class="temp-info__small-degree">°</span></p>
+                <p class="temp-info__small-text">Feels like 48<span class="temp-info__small-degree">°</span></p>
+              </div>
+            </section>
+          </section>
+
+          <div class="temp-scoll-container">
+            <img src="./Images/HourlyTemp.png" alt="hourly temperature">
+          </div>
+
+          <div class="widget_bg">
+          <section class="widgets">
+
+            <div class="widget-container">
+              <div class="widget-size3 widget rainfall-widget">
+                <p class="widget__header-text">Rain peaking at 12P and stopping around 4P</p>
+              </div>
+            </div>
+
+            <div class="widget__edit-button__container">
+              <div class="widget__edit-button">
+                <p class="edit-text">Edit</p>
+              </div>
+            </div>
+            
+            <div class="widget-container">
+
+              <div class="widget-size1 widget">
+                <p class="widget__header-text">Alert</p>
+                <div class="widget-flex-container-alert">
+                  <img src="./Images/AlertIcon.png" width="30%" alt="alert icon">
+                  <p class="widget__header-text3">Heavy rainfall</p>
+                </div>
+              </div>
+              <div class="widget-size2 widget weekly-forecast">
+                <p class="widget__header-text"></p>
+              </div>
+            </div>
+
+            <div class="widget-container">
+              <div class="widget-size1 widget">
+                <p class="widget__header-text">Humidity</p>
+                <p class="widget__body-text">55<span class="widget__small-text"> %</span></p>
+              </div>
+              <div class="widget-size1 widget">
+                <p class="widget__header-text">Wind</p>
+                <p class="widget__body-text">7<span class="widget__small-text">mph</span></p>
+              </div>
+              <div class="widget-size1 widget">
+                <p class="widget__header-text">UV index</p>
+                <p class="widget__body-text">1<span class="widget__small-text"> /10</span></p>
+              </div>
+            </div>
+
+            <div class="widget-container">
+              <div class="widget-size2 widget">
+                <p class="widget__header-text2">Sunset</p>
+                <div class="widget-flex-container-sunset">
+                  <p class="widget__body-text">5:38</p>
+                  <img src="./Images/SunsetIcon.png" alt="sunset icon">
+                </div>
+              </div>
+              <div class="widget-size1 widget">
+                <p class="widget__header-text">Air Quality</p>
+                <p class="widget__body-text2">40</p>
+                <p class="widget__small-text2">good level</p>
+              </div>
+            </div>
+
+          </section>
+          </div>
+
+      </main>
+
+    </div>
+
+  </body>
+</html>
